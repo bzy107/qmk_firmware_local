@@ -34,3 +34,28 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+
+
+
+
+
+----
+
+# qmk firmware
+https://docs.qmk.fm/#/newbs_building_firmware
+
+## 1.新しいキーマップを作成
+qmk new-keymap -kb <keyboard_name>
+
+firmwareを書き換える場合
+## 2.キーマップのファイルを好きなように書き換える
+/Users/bzy107r/qmk_firmware/keyboards/ergodash/mini/keymaps/bzy107/keymap.c
+## 3.コンパイルする(3.のファイルが更新される)
+qmk compile -kb <keyboard_name>
+## 4. QMK Toolboxのアプリを起動
+open の横にファイル名を記載
+/Users/bzy107r/qmk_firmware/ergodash_mini_bzy107.hex
+## 5.キーボードのリセットを押す
+## 6.flashボタンが活性されるので押下(すぐに書き変わる)
+両方のキーボードで実施する

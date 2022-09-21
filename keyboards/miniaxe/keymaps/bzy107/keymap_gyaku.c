@@ -53,10 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *               `--------------------'           `--------------------'
  */
 [_ZERO] = LAYOUT_split_3x5_3(
-  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
-  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
-  MT(MOD_LCTL, KC_Z),    MT(MOD_LCTL, KC_X),    KC_C,    KC_V,    KC_B,         KC_N,    KC_M,    KC_COMM, KC_DOT,  MT(MOD_RALT, KC_SLSH),
-                    TWO,     KC_SPC,  KC_LSFT,      KC_BSPC, MT(MOD_LGUI, KC_ENT), ONE
+  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,                        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         
+  KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,                     KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         
+  KC_N,    KC_M,    KC_COMM, KC_DOT,  MT(MOD_RALT, KC_SLSH),       MT(MOD_LCTL, KC_Z),    MT(MOD_LCTL, KC_X),KC_C,    KC_V,    KC_B,
+  KC_BSPC, MT(MOD_LGUI, KC_ENT), ONE,                              TWO,     KC_SPC,  KC_LSFT
 ),
 
 /* ONE
@@ -72,10 +72,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *               `--------------------'             `--------------------'
  */
 [_ONE] = LAYOUT_split_3x5_3(
-  KC_ESC,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,        KC_PLUS, KC_F1 ,  KC_F2 ,  KC_F3 ,  KC_F4 ,
-  KC_TAB,  KC_PERC, KC_ASTR, KC_AMPR, KC_QUOT,       KC_EQL , KC_F5 ,  KC_F6 ,  KC_F7 ,  KC_F8 ,
-  KC_LCTL, KC_GRV , KC_CIRC, KC_BSLS, KC_LSFT,       KC_MINS, KC_F9 ,  KC_F10,  KC_F11,  SIX,
-                      THREE, KC_SPC,  KC_LSFT,       KC_DEL,  MT(MOD_LGUI, KC_ENT), _______
+  KC_PLUS, KC_F1 ,  KC_F2 ,  KC_F3 ,  KC_F4 ,        KC_ESC,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR, 
+  KC_EQL , KC_F5 ,  KC_F6 ,  KC_F7 ,  KC_F8 ,        KC_TAB,  KC_PERC, KC_ASTR, KC_AMPR, KC_QUOT,
+  KC_MINS, KC_F9 ,  KC_F10,  KC_F11,  SIX,           KC_LCTL, KC_GRV , KC_CIRC, KC_BSLS, KC_LSFT,
+  KC_DEL,  MT(MOD_LGUI, KC_ENT), _______,            THREE, KC_SPC,  KC_LSFT
 ),
 
 /* TWO
@@ -91,10 +91,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *               `--------------------'         `--------------------'
  */
 [_TWO] = LAYOUT_split_3x5_3(
-  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_QUOT, KC_NO, KC_UP ,   KC_LBRC,  KC_RBRC,
-  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,       KC_EQL , KC_LEFT, KC_LPRN,  KC_RIGHT, KC_RPRN,
-  KC_LCTL, KC_TAB,  KC_RALT, KC_LSFT, FIVE,       KC_MINS, KC_NO, KC_DOWN,  KC_LCBR,  KC_RCBR,
-                    _______, KC_SPC,  KC_LSFT,    KC_DEL, MT(MOD_LGUI, KC_ENT), FOUR
+  KC_QUOT, KC_NO, KC_UP ,   KC_LBRC,  KC_RBRC,      KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       
+  KC_EQL , KC_LEFT, KC_LPRN,  KC_RIGHT, KC_RPRN,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,       
+  KC_MINS, KC_NO, KC_DOWN,  KC_LCBR,  KC_RCBR,      KC_LCTL, KC_TAB,  KC_RALT, KC_LSFT, FIVE,       
+  KC_DEL, MT(MOD_LGUI, KC_ENT), FOUR,               _______, KC_SPC,  KC_LSFT
 ),
 
 /* THREE
@@ -110,10 +110,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *               `--------------------'           `--------------------'
  */
 [_THREE] =  LAYOUT_split_3x5_3(
-  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
-  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
-  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,         KC_N,    KC_M,    KC_RALT, KC_LCTL, KC_LGUI,
-                    _______, KC_SPC,  KC_LSFT,      KC_BSPC, KC_ENT, _______
+  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         
+  KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,     KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         
+  KC_N,    KC_M,    KC_RALT, KC_LCTL, KC_LGUI,     KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,         
+  KC_BSPC, KC_ENT, _______,                        _______, KC_SPC,  KC_LSFT
 ),
 
 /* FOUR
@@ -148,10 +148,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *               `--------------------'           `--------------------'
  */
 [_FIVE] =  LAYOUT_split_3x5_3(
-  KC_NO, KC_NO, KC_NO, KC_NO, LCG_NRM,      KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-  KC_NO, KC_NO, KC_NO, KC_NO, LCG_SWP,      KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-  ZENHAN, ZENHAN2, KC_NO, KC_NO, KC_NO,      KC_RALT, KC_TILD, KC_NO, KC_NO, KC_NO,
-                    KC_NO, KC_NO, RESET,      KC_NO,  KC_NO, KC_NO
+  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, LCG_NRM,  
+  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,              KC_NO, KC_NO, KC_NO, KC_NO, LCG_SWP,  
+  KC_RALT, KC_TILD, KC_NO, KC_NO, KC_NO,         ZENHAN, ZENHAN2, KC_NO, KC_NO, KC_NO, 
+    KC_NO,  KC_NO, KC_NO,                         KC_NO, KC_NO, RESET
 )
 };
 
