@@ -30,10 +30,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 #ifndef COCOT_CPI_OPTIONS
-#    define COCOT_CPI_OPTIONS { 250, 500, 750, 500, 1250 }
+#    define COCOT_CPI_OPTIONS { 250, 500, 750, 750, 1250 }
 #    ifndef COCOT_CPI_DEFAULT
-#       define COCOT_CPI_DEFAULT 3
-#    endif
+#       define COCOT_CPI_DEFAULT 3#    endif
 #endif
 #ifndef COCOT_CPI_DEFAULT
 #    define COCOT_CPI_DEFAULT 3
