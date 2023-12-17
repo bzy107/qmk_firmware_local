@@ -45,17 +45,29 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 # qmk firmware
 https://docs.qmk.fm/#/newbs_building_firmware
 
-## 1.新しいキーマップを作成
-qmk new-keymap -kb <keyboard_name>
+## 1. qmkのディレクトリに移動
+```bash
+pwd 
+/Users/bzy107r/git/kbd/qmk_firmware
+```
+## 2. 新しいキーマップを作成
+```bash
+qmk new-keymap -kb <keyboard_name> -km <keymap_name>
+```
+keymap_nameのフォルダが作成されてkeymap.cファイルが作成されるのでそこでkeymapを定義
 
-firmwareを書き換える場合
-## 2.キーマップのファイルを好きなように書き換える
+## 3. firmwareを書き換える
+キーマップのファイルを好きなように書き換える
+ex)
 /Users/bzy107r/qmk_firmware/keyboards/ergodash/mini/keymaps/bzy107/keymap.c
-## 3.コンパイルする(3.のファイルが更新される)
-qmk compile -kb <keyboard_name>
-## 4. QMK Toolboxのアプリを起動
+
+## 4.コンパイルする(3.のファイルが更新される)
+qmk compile -kb <keyboard_name> -km <keymap_name>
+
+## 5. QMK Toolboxのアプリを起動
 open の横にファイル名を記載
 /Users/bzy107r/qmk_firmware/ergodash_mini_bzy107.hex
+
 ## 5.キーボードのリセットを押す
 ## 6.flashボタンが活性されるので押下(すぐに書き変わる)
 両方のキーボードで実施する
